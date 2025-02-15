@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Surprise! ❤️</title>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Short+Stack&display=swap');
+    body {
+      background: #ffebf0;
+      text-align: center;
+      font-family: 'Short Stack', cursive;
+      overflow-y: auto;
+      height: 100vh;
+    }
+    .container {
+      margin-top: 50px;
+      padding: 20px;
+    }
+    img {
+      width: fit-content;
+      height: fit-content;
+      border-radius: 15px;
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+      animation: fadeIn 2s;
+      object-fit:cover;
+    }
+    .back-button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 18px;
+      background: #ff4081;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .back-button:hover {
+      background: white;
+      color: #ff4081;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    .love-message {
+      font-size: 50px;
+      font-family: 'Dancing Script', cursive;
+      color: #ff4081;
+      text-shadow: 2px 2px 10px rgba(255, 64, 129, 0.5);
+      animation: glow 2s infinite alternate;
+    }
+    @keyframes glow {
+      from { text-shadow: 2px 2px 10px rgba(255, 64, 129, 0.5); }
+      to { text-shadow: 2px 2px 20px rgba(255, 64, 129, 0.9); }
+    }
+    .msg{
+      font-size: 33px;
+    }
+    .floating-hearts {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      pointer-events: none;
+      background: url('hearts.gif') repeat;
+      opacity: 0.2;
+    }
+  </style>
+</head>
+<body>
+  <div class="floating-hearts"></div>
+  <audio autoplay loop>
+    <source src="your-favorite-song.mp3" type="audio/mpeg">
+  </audio>
+  <div class="container">
+    <h1 class="love-message">A little msg for My Love! 💖</h1>
+    <p class="msg">This is made just for you! Hope it brings a smile to your face. 😊</p>
+    <p class="msg">I dont know what should i say, you know i lack words in this 
+        i lack in expressing things, in emotions also and you 
+        complete that side. I dont if u will like it or not but 
+        here is a small present from ur "Vinu"<br>
+      A Happy Birthday to you Dobu<br>
+      Hope u enjoy ur day n life to the fullest<br>
+      And i will be covering ur back so just relax and enjoy ur ride.
+      <br> I Love You!!!!!❤️❤️😘😘
+      </p>
+    <br>
+  </div>
+  <div>
+    <img src="Images/surprice.jpeg" alt="Special Surprise Image">
+  </div>
+</body>
+</html>
